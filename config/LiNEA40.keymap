@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,
+            //スクロール方向を逆転,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -134,7 +134,7 @@
     };
 
     macros {
-        pass: pass {
+        ukzs: pass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <30>;  // 入力速度が速すぎてPC側が追いつかない場合に調整
