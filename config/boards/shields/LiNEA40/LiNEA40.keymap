@@ -53,6 +53,8 @@
 };
 
 &trackball_listener {
+    status = "okay";
+    device = <&trackball>;
     scroller {
         layers = <SCROLL>;
         input-processors =
