@@ -54,6 +54,7 @@
 };
 
 &trackball_listener {
+    status = "okay";
     scroller {
         layers = <SCROLL>;
         input-processors =
