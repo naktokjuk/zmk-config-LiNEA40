@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,
+            //スクロール方向を逆転,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -137,7 +137,10 @@
         pass: pass {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N &kp O &kp M &kp U &kp R &kp A &kp UNDER &kp NUMBER_6 &kp NUMBER_9 &kp NUMBER_8 &kp NUMBER_0>;
+            bindings =
+                <&kp N &kp O &kp M &kp U &kp R &kp A &kp UNDER &kp NUMBER_6 &kp NUMBER_9 &kp NUMBER_8 &kp NUMBER_0>,
+                <&macro_tap>;
+
             label = "PASS";
         };
     };
@@ -176,7 +179,6 @@
 &kp SLASH     &kp MINUS    &kp N1     &kp N2  &kp N3                               &kp LESS_THAN         &kp GREATER_THAN       &kp UNDERSCORE   &kp MINUS      &trans
 &kp COLON     &kp PERCENT  &kp EQUAL  &trans  &trans  &kp BACKSPACE    &kp DELETE  &trans                                       &kp LBRC         &kp RBRC       &kp LS(QUESTION)
             >;
-
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
