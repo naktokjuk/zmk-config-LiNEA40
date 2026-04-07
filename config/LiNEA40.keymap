@@ -209,7 +209,7 @@
 
         SCROLL {
             bindings = <
-&pass   &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&ukzs   &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans
