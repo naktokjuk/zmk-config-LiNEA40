@@ -150,16 +150,16 @@
         //1
 
         MOUSE {
-            &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans          &kp DOWN_ARROW  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans          &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans          &trans
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans            &trans  &trans  &trans
             >;
-
-            sensor-bindings = <&mouse_scrl SCRL_UP SCRL_DOWN>;
         };
 
         //2
+
 
         MARK {
             bindings = <
