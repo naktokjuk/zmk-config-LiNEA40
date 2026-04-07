@@ -171,11 +171,12 @@
 
         MARK {
             bindings = <
-&kp F1      &kp F2      &kp F3      &kp F4      &kp F5                        &trans  &trans  &trans  &trans  &trans
-&kp F6      &kp F7      &kp F8      &kp F9      &kp F10                       &trans  &trans  &trans  &trans  &trans
-&kp F11     &kp F12     &kp LS(F1)  &kp LS(F2)  &kp LS(F3)                    &trans  &trans  &trans  &trans  &trans
-&kp LS(F4)  &kp LS(F5)  &kp LS(F6)  &kp LS(F7)  &kp LS(F8)  &trans    &trans  &trans          &trans  &trans  &trans
+&kp ASTERISK  &kp PLUS     &kp N7     &kp N8  &kp N9                               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH         &kp AMPERSAND  &kp AT_SIGN
+&kp PERIOD    &kp N0       &kp N4     &kp N5  &kp N6                               &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp EXCLAMATION  &kp QUESTION   &kp UNDERSCORE
+&kp SLASH     &kp MINUS    &kp N1     &kp N2  &kp N3                               &kp LESS_THAN         &kp GREATER_THAN       &kp UNDERSCORE   &kp MINUS      &trans
+&kp COLON     &kp PERCENT  &kp EQUAL  &trans  &trans  &kp BACKSPACE    &kp DELETE  &trans                                       &kp LBRC         &kp RBRC       &kp LS(QUESTION)
             >;
+
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
