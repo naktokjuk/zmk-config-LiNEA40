@@ -141,6 +141,18 @@
             tap-ms = <30>;
             bindings = <&kp N &kp O &kp M &kp U &kp R &kp A &kp UNDER &kp NUMBER_6 &kp NUMBER_9 &kp NUMBER_8 &kp NUMBER_0>;
         };
+
+        scst: scst {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+            = <&macro_press &kp LGUI &kp LSHIFT>
+            , <&macro_tap &kp S>
+            , <&macro_release &kp LGUI &kp LSHIFT>
+            ;
+        };
     };
 
     keymap {
@@ -190,7 +202,7 @@
 &trans  &trans  &trans  &trans  &trans                    &trans           &trans       &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW
 &trans  &trans  &trans  &trans  &trans                    &mkp MB4         &mkp MB5     &trans          &kp DOWN_ARROW  &kp C_VOLUME_UP
 &trans  &trans  &trans  &trans  &trans                    &kp LS(LC(TAB))  &kp LC(TAB)  &trans          &trans          &kp C_VOLUME_DOWN
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                        &trans          &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &scst    &trans  &trans                        &trans          &trans          &trans
             >;
         };
 
