@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,
+            //スクロール方向を逆転,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -147,11 +147,13 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings
-            = <&macro_press &kp LGUI &kp LSHIFT>
-            , <&macro_tap &kp S>
-            , <&macro_release &kp LGUI &kp LSHIFT>
-            ;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &kp LSHIFT>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp LGUI &kp LSHIFT>;
         };
     };
 
@@ -161,9 +163,9 @@
         default_layer {
             bindings = <
 &kp Q             &kp W             &kp E           &kp R    &kp T                                         &kp Y             &kp U  &kp I             &kp O              &kp P
-&kp A             &kp S             &kp D           &kp F    &kp G                                         &kp H             &kp J  &kp K             &kp L              &lt 3 RETURN
-&mt LEFT_SHIFT Z  &kp X             &kp C           &kp V    &kp B                                         &kp N             &kp M  &kp COMMA         &kp PERIOD         &lt 2 MINUS
-&mt LCTRL ESC     &mt LEFT_ALT TAB  &lt 5 CAPSLOCK  &kp INS  &lt 2 SPACE  &lt 4 ENTER    &lt 4 LANGUAGE_1  &lt 3 LANGUAGE_2         &lt 6 LEFT_ARROW  &lt 5 RIGHT_ARROW  &lt 5 BACKSPACE
+&kp A             &kp S             &kp D           &kp F    &kp G                                         &kp H             &kp J  &kp K             &kp L              &lt 4 RETURN
+&mt LEFT_SHIFT Z  &kp X             &kp C           &kp V    &kp B                                         &kp N             &kp M  &kp COMMA         &kp PERIOD         &lt 3 MINUS
+&mt LCTRL ESC     &mt LEFT_ALT TAB  &lt 5 CAPSLOCK  &kp INS  &lt 3 SPACE  &lt 4 ENTER    &lt 4 LANGUAGE_1  &lt 4 LANGUAGE_2         &lt 6 LEFT_ARROW  &lt 5 RIGHT_ARROW  &lt 5 BACKSPACE
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -199,10 +201,10 @@
 
         CURSOR {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans           &trans       &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW
-&trans  &trans  &trans  &trans  &trans                    &mkp MB4         &mkp MB5     &trans          &kp DOWN_ARROW  &kp C_VOLUME_UP
-&trans  &trans  &trans  &trans  &trans                    &kp LS(LC(TAB))  &kp LC(TAB)  &trans          &trans          &kp C_VOLUME_DOWN
-&trans  &trans  &trans  &trans  &trans  &scst    &trans  &trans                        &trans          &trans          &trans
+&kp HOME  &trans  &trans  &trans  &kp PAGE_UP                     &trans           &trans       &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW
+&trans    &trans  &trans  &trans  &kp PAGE_DOWN                   &mkp MB4         &mkp MB5     &trans          &kp DOWN_ARROW  &kp C_VOLUME_UP
+&trans    &trans  &trans  &trans  &trans                          &kp LS(LC(TAB))  &kp LC(TAB)  &trans          &trans          &kp C_VOLUME_DOWN
+&trans    &trans  &trans  &trans  &kp LS(END)    &scst    &trans  &trans                        &trans          &trans          &trans
             >;
         };
 
@@ -213,7 +215,7 @@
 &kp F1      &kp F2      &kp F3      &kp F4      &kp F5                        &trans  &trans  &trans  &trans  &trans
 &kp F6      &kp F7      &kp F8      &kp F9      &kp F10                       &trans  &trans  &trans  &trans  &trans
 &kp F11     &kp F12     &kp LS(F1)  &kp LS(F2)  &kp LS(F3)                    &trans  &trans  &trans  &trans  &trans
-&kp LS(F4)  &kp LS(F5)  &kp LS(F6)  &kp LS(F7)  &kp LS(F8)  &trans    &trans  &trans          &trans  &trans  &trans
+&kp LS(F4)  &kp LS(F5)  &kp LS(F6)  &trans      &kp LS(F7)  &trans    &trans  &trans          &trans  &trans  &trans
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
