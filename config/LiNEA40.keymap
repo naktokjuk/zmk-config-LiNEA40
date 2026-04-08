@@ -181,7 +181,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans            &trans  &trans  &mo 5
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_UP SCRL_UP>;
+            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
         };
 
         //2
