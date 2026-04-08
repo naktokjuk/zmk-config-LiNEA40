@@ -85,8 +85,10 @@
         a-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <24>;
+        resolution = <4>;  // ← 追加
         status = "disabled";
     };
+
 
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
