@@ -66,5 +66,4 @@
 
 &trackball_listener {
     status = "okay";
-    device = <&trackball>;
 };
